@@ -1,0 +1,172 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+
+h1, h2 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff6347; 
+}
+
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.welcome-section, .featured-jobs, .quote-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+
+.featured-jobs .job-list {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-jobs .job-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.featured-jobs .job-list li:hover {
+    background-color: #f0f0f0; 
+}
+
+
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+}
+
+
+.scroll-container {
+    max-height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.job-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.job-image {
+    max-width: 30%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+.prev-btn, .next-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
